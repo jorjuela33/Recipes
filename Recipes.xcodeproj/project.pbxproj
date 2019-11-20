@@ -93,6 +93,8 @@
 		CFE41B492385F37B00D8B3ED /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE41B482385F37B00D8B3ED /* OrderPresenter.swift */; };
 		CFE41B4B2385F3F500D8B3ED /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE41B4A2385F3F500D8B3ED /* OrderViewController.swift */; };
 		CFE41B4D2385F4D700D8B3ED /* OrderWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE41B4C2385F4D700D8B3ED /* OrderWireframe.swift */; };
+		CFE41B4F2385FB7300D8B3ED /* String+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE41B4E2385FB7300D8B3ED /* String+Transformations.swift */; };
+		CFE41B512385FC9000D8B3ED /* Double+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE41B502385FC9000D8B3ED /* Double+Transformations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +249,8 @@
 		CFE41B482385F37B00D8B3ED /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
 		CFE41B4A2385F3F500D8B3ED /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		CFE41B4C2385F4D700D8B3ED /* OrderWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderWireframe.swift; sourceTree = "<group>"; };
+		CFE41B4E2385FB7300D8B3ED /* String+Transformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Transformations.swift"; sourceTree = "<group>"; };
+		CFE41B502385FC9000D8B3ED /* Double+Transformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Transformations.swift"; sourceTree = "<group>"; };
 		E21C5A9171AE7DEAB2C5A14F /* Pods_Application_ApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application_ApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A7A46796215462734FD339 /* Pods-Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.release.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -563,8 +567,10 @@
 		CFC21A512385CCE7000D65E9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFE41B502385FC9000D8B3ED /* Double+Transformations.swift */,
 				CFC21A522385CCE7000D65E9 /* Storyboard+Initialization.swift */,
 				CFC21A532385CCE7000D65E9 /* Reactive+Extensions.swift */,
+				CFE41B4E2385FB7300D8B3ED /* String+Transformations.swift */,
 				CFC21ADE2385DA8F000D65E9 /* UIColor+Initializers.swift */,
 			);
 			path = Extensions;
@@ -1233,6 +1239,7 @@
 				CFC21ACA2385D44A000D65E9 /* LayoutAttributes.swift in Sources */,
 				CFE41B452385F1E700D8B3ED /* OrderCollectionViewCell.swift in Sources */,
 				CFC21A5C2385CCE7000D65E9 /* Application.swift in Sources */,
+				CFE41B4F2385FB7300D8B3ED /* String+Transformations.swift in Sources */,
 				CFC21A552385CCE7000D65E9 /* ProductsPresenter.swift in Sources */,
 				CFC21A592385CCE7000D65E9 /* ActivityIndicator.swift in Sources */,
 				CFE41B4B2385F3F500D8B3ED /* OrderViewController.swift in Sources */,
@@ -1245,6 +1252,7 @@
 				CFC21ACD2385D44A000D65E9 /* CollectionPlaceholderReusableView.swift in Sources */,
 				CFE41B472385F21800D8B3ED /* OrderDatasource.swift in Sources */,
 				CFC21ADF2385DA8F000D65E9 /* UIColor+Initializers.swift in Sources */,
+				CFE41B512385FC9000D8B3ED /* Double+Transformations.swift in Sources */,
 				CFC21A5B2385CCE7000D65E9 /* ErrorBuilder.swift in Sources */,
 				CFC21AC52385D44A000D65E9 /* SegmentedDatasource.swift in Sources */,
 				CFC21ACE2385D44A000D65E9 /* CollectionViewCell.swift in Sources */,

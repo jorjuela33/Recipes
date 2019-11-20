@@ -14,6 +14,7 @@ class OrderViewController: ViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var newOrderButton: UIButton!
+    @IBOutlet var totalLabel: UILabel!
 
     private let disposeBag = DisposeBag()
 
@@ -39,6 +40,7 @@ class OrderViewController: ViewController {
         output?.datasource.delegate = self
         output?.datasource.registerReusableViewsWithCollectionView(collectionView)
         output?.datasource.defaultMetrics.rowSize = CGSize(width: UIScreen.main.bounds.width * widthProportion, height: 56)
+        totalLabel.text = output?.total
     }
 }
 

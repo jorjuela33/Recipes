@@ -83,6 +83,7 @@ class ProductsPresenter {
             let pluralized = products > 1 ? "s" : ""
             orderHidden.accept(products == 0)
             orderTitle.accept("Order \(products) item\(pluralized)")
+            self?.datasource.notifySectionsRefreshed(IndexSet(integer: 0))
         }
 
         input.order.drive(onNext: wireframe.toOrderScreen).disposed(by: disposeBag)

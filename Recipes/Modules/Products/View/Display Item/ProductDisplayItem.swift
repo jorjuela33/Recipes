@@ -36,7 +36,7 @@ struct ProductDisplayItem {
         let quantity = cart.quantity(for: product)
         self.cart = cart
         self.color = UIColor(hexString: product.hexColor)
-        self.description = "\(product.name)" + (quantity > 0 ? "(\(quantity))" : "")
+        self.description = "\(product.name)" + (quantity > 1 ? "(\(quantity))" : "")
         self.image = product.type.image
         self.name = product.name.capitalized
         self.price = product.price

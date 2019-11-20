@@ -22,6 +22,7 @@ class OrderPresenter {
 
     struct Output {
         let datasource: OrderDatasource
+        let total: String
     }
 
     // MARK: Initializers
@@ -35,7 +36,9 @@ class OrderPresenter {
     // MARK: Instance methods
 
     func transform(_ input: Input) -> Output {
+        let total = cart.items.compactMap({ $0.key.price.doubleValue() * Double($0.value) }).reduce(0, +)
         datasource.setNeedsLoadContent()
+
         input.newOrder
             .drive(onNext: { [weak self] in
                 self?.cart.removeAll()
@@ -43,6 +46,6 @@ class OrderPresenter {
             })
             .disposed(by: disposeBag)
 
-        return Output(datasource: datasource)
+        return Output(datasource: datasource, total: total.currencyValue())
     }
 }

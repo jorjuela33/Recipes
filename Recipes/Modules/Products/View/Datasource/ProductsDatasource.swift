@@ -71,6 +71,5 @@ extension ProductsDatasource: ProductCollectionViewCellDelegate {
             let product = item(at: indexPath) as ProductDisplayItem?  else { return }
 
         cart.add(product.product)
-        notifySectionsRefreshed(IndexSet(integer: 0))
     }
 }

@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class OrderDatasource: BasicDataSource<ProductDisplayItem, ProductCollectionViewCell> {
+class OrderDatasource: BasicDataSource<ProductDisplayItem, OrderCollectionViewCell> {
     private let cart: Cart
 
     // MARK: Initializers
@@ -28,7 +28,7 @@ class OrderDatasource: BasicDataSource<ProductDisplayItem, ProductCollectionView
 
             loading.updateWithContent { datasource in
                 let items = self.cart.items.keys.map({ ProductDisplayItem(product: $0, cart: self.cart) })
-                (datasource as? ProductsDatasource)?.setItems(items)
+                (datasource as? OrderDatasource)?.setItems(items)
             }
         }
     }

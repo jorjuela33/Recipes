@@ -168,20 +168,20 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderCollectionViewCell" id="QgZ-0f-m1r" customClass="OrderCollectionViewCell" customModule="Recipes" customModuleProvider="target">
-                                                <rect key="frame" x="4" y="0.0" width="317" height="56"/>
+                                                <rect key="frame" x="22.5" y="0.0" width="280" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ka6-V6-kTM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="317" height="56"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="56"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-EE-QQ3">
-                                                            <rect key="frame" x="15" y="19.5" width="247.5" height="17"/>
+                                                            <rect key="frame" x="15" y="19.5" width="210.5" height="17"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veL-pw-cla">
-                                                            <rect key="frame" x="272.5" y="21.5" width="29.5" height="13.5"/>
+                                                            <rect key="frame" x="235.5" y="21.5" width="29.5" height="13.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -195,7 +195,7 @@
                                                         <constraint firstItem="W0u-EE-QQ3" firstAttribute="leading" secondItem="Ka6-V6-kTM" secondAttribute="leading" constant="15" id="pCm-df-Yuj"/>
                                                     </constraints>
                                                 </collectionViewCellContentView>
-                                                <size key="customSize" width="317" height="56"/>
+                                                <size key="customSize" width="280" height="56"/>
                                                 <connections>
                                                     <outlet property="nameLabel" destination="W0u-EE-QQ3" id="KlL-Fv-6T2"/>
                                                     <outlet property="priceLabel" destination="veL-pw-cla" id="MCF-CO-UB6"/>
@@ -265,6 +265,7 @@
                     <connections>
                         <outlet property="collectionView" destination="wiX-Tm-VAw" id="VJX-dM-4HM"/>
                         <outlet property="newOrderButton" destination="aIX-NC-Cpj" id="T6J-dU-8we"/>
+                        <outlet property="totalLabel" destination="fzf-Yr-wof" id="NBi-0p-acn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJY-0b-8WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
